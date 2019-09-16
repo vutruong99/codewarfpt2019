@@ -10,7 +10,7 @@ String digitalNumber(String[] lightStatus)
                 compare = compare + lightStatus[j].substring(i,i+3);
         }
         switch (compare) {
-            case "****.**.**.****": 
+            case "****.**.**.****":
                 result=result+"0";
                 break;
             case  "..*..*..*..*..*":
@@ -40,11 +40,10 @@ String digitalNumber(String[] lightStatus)
             case     "****.****..****":
                 result=result+"9";
                 break;
-            default: 
-                System.out.println("wrong string");  
+            default:
+                System.out.println("wrong string");
         }
         compare = "";
     }
     return result;
 }
-
